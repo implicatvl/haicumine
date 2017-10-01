@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('bunvenit');
 });
+
+
+Route::get('/o9cursa', 'CurseController@o9Cursa_get')->name('o9cursa');
+Route::post('/o9cursa', 'CurseController@o9Cursa_post');
